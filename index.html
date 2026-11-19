@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edmonton & Area Commercial Cleaning Services | 2K2 Janitorial Services</title>
+<meta name="description" content="We promise and deliver satisfaction by personalising our service for you! Commercial and office cleaning in Edmonton, Nisku, Sherwood Park and area.">
+<link rel="icon" href="images/2k2-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#8C2E50; --plum-deep:#3E1229; --blue:#4F6EF7; --blue-soft:#E7EBFE;
+  --ink:#1C1A2C; --muted:#5A5870; --paper:#F7F8FC; --surface:#FFFFFF; --line:#DCDFEC;
+  --on-dark:#F4F2F8; --on-dark-muted:#C9C2D6;
+  --font:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --plum:#C85C84; --plum-deep:#2A0C1C; --blue:#7C93FF; --blue-soft:#1F2547;
+    --ink:#EEEDF5; --muted:#ABA8BE; --paper:#13121C; --surface:#1C1B28; --line:#2F2E40;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --plum:#C85C84; --plum-deep:#2A0C1C; --blue:#7C93FF; --blue-soft:#1F2547;
+  --ink:#EEEDF5; --muted:#ABA8BE; --paper:#13121C; --surface:#1C1B28; --line:#2F2E40;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--surface)}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-stretch:112%;line-height:1.02;letter-spacing:-.02em;margin:0}
+
+/* image slot: on-brand stripes show until the photo exists */
+.slot{position:relative;overflow:hidden;background:
+  repeating-linear-gradient(180deg,color-mix(in srgb,var(--plum) 18%,transparent) 0 14px,transparent 14px 28px),var(--blue-soft)}
+.slot img{width:100%;height:100%;object-fit:cover}
+.tower .slot img{object-position:35% center}
+
+/* top bar (reference structure) */
+.topbar{background:var(--plum-deep);color:var(--on-dark);font-size:14px}
+.topbar .wrap{display:flex;gap:28px;align-items:center;justify-content:space-between;padding:9px 0;flex-wrap:wrap}
+.topbar a{text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+.topbar .contact{display:flex;gap:24px;flex-wrap:wrap}
+.social{display:flex;gap:6px}
+.social a{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.1)}
+.social a:hover{background:var(--blue)}
+.social svg{width:15px;height:15px;fill:currentColor}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--surface);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:32px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:58px;height:auto}
+.brand span{font-stretch:88%;font-weight:700;font-size:18px;line-height:1.1}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:13px;font-stretch:100%}
+nav.main{display:flex;gap:28px;margin-left:auto}
+nav.main a{text-decoration:none;font-weight:500;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--blue)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:16px;padding:14px 24px;border-radius:999px;border:2px solid transparent;transition:background .2s,color .2s}
+.btn.primary{background:var(--plum);color:#fff}
+.btn.primary:hover{background:var(--plum-deep)}
+.btn.ghost{border-color:currentColor}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+header .btn{padding:11px 20px;font-size:15px}
+
+/* hero */
+.hero{padding:72px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(42px,5.6vw,84px);font-weight:800;font-stretch:118%;color:var(--ink)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:34em;margin:28px 0 36px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:72px}
+.hero .ctas .btn.ghost{color:var(--ink)}
+.tower{position:relative;align-self:stretch;min-height:520px}
+.tower .slot{position:absolute;inset:0 0 120px 0;
+  clip-path:polygon(0 34%,24% 34%,24% 12%,52% 12%,52% 0,76% 0,76% 22%,100% 22%,100% 100%,0 100%)}
+.tower .base{position:absolute;left:-6%;right:-6%;bottom:0;height:120px;
+  background:repeating-linear-gradient(180deg,var(--plum) 0 12px,transparent 12px 24px);
+  clip-path:polygon(6% 0,94% 0,100% 100%,0 100%)}
+.tower .base::after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(180deg,transparent 0 12px,var(--blue) 12px 24px);
+  clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%);opacity:.95}
+@media (prefers-reduced-motion:no-preference){
+  .tower .slot{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+  .tower .base{animation:spread .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{clip-path:polygon(0 100%,24% 100%,24% 100%,52% 100%,52% 100%,76% 100%,76% 100%,100% 100%,100% 100%,0 100%)}}
+  @keyframes spread{from{transform:scaleX(.4);opacity:0}}
+}
+
+/* tagline band on real window photo */
+.band{position:relative;background:var(--plum-deep);color:#fff}
+.band .slot{position:absolute;inset:0;background:var(--plum-deep)}
+.band .slot img{opacity:.35;mix-blend-mode:luminosity}
+.band .wrap{position:relative;padding:80px 0;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.band p{margin:0;font-weight:800;font-stretch:125%;font-size:clamp(30px,4.4vw,62px);line-height:1;letter-spacing:-.02em;max-width:15em}
+.band .btn.ghost{color:#fff}
+.band .btn.ghost:hover{background:#fff;color:var(--plum-deep)}
+
+/* about */
+.about{padding:120px 0}
+.about .wrap{display:grid;grid-template-columns:5fr 7fr;gap:72px}
+.about h2{font-size:clamp(32px,3.6vw,50px);font-weight:800}
+.about .copy p{margin:0 0 20px;max-width:38em}
+.about .copy p:first-child{font-size:21px;line-height:1.5;color:var(--ink)}
+.about .copy p+p{color:var(--muted)}
+.commit{display:grid;grid-template-columns:repeat(2,1fr);margin:40px 0 0;padding:0;list-style:none;border-top:2px solid var(--ink)}
+.commit li{padding:20px 20px 20px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;font-weight:600}
+.commit li::before{content:"";flex:none;width:12px;height:12px;background:var(--blue);transform:translateY(1px)}
+.commit li:nth-child(even)::before{background:var(--plum)}
+
+/* office cleaning */
+.office{background:var(--surface);border-block:1px solid var(--line);padding:120px 0}
+.office .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.office .slot{aspect-ratio:4/3;border-radius:6px 120px 6px 6px}
+.office h2{font-size:clamp(34px,4vw,56px);font-weight:800;margin-bottom:22px}
+.office p{color:var(--muted);max-width:32em;margin:0 0 32px}
+.directory{background:var(--plum-deep);color:var(--on-dark);border-radius:6px;padding:28px 30px;box-shadow:inset 0 0 0 6px rgba(255,255,255,.04)}
+.directory h3{font-size:15px;font-stretch:100%;font-weight:600;color:var(--on-dark-muted);letter-spacing:.02em;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.15)}
+.directory ul{list-style:none;margin:0;padding:0}
+.directory li{display:flex;align-items:baseline;gap:10px;padding:9px 0;font-size:18px;font-weight:600}
+.directory li::after{content:"";order:1;flex:1;border-bottom:2px dotted rgba(255,255,255,.25);transform:translateY(-4px)}
+.directory li span{order:2;font-size:14px;font-weight:500;color:#AFC0FF}
+
+/* additional services */
+.extra{padding:120px 0}
+.extra .head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.extra h2{font-size:clamp(34px,4vw,56px);font-weight:800}
+.extra .head p{margin:0 0 12px;color:var(--muted);max-width:32em}
+.extra .head p:first-child{color:var(--ink);font-weight:600;font-size:19px}
+.svc-grid{display:grid;grid-template-columns:1fr 1.35fr;grid-template-rows:auto auto;gap:24px}
+.svc{position:relative;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;border-radius:6px;overflow:hidden;min-height:300px;text-decoration:none}
+.svc .slot{position:absolute;inset:0}
+.svc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(30,8,20,.86))}
+.svc .txt{position:relative;z-index:1;padding:28px}
+.svc h3{font-size:clamp(24px,2.4vw,34px);font-weight:800;margin-bottom:8px}
+.svc p{margin:0;max-width:26em;color:#EDE6F0}
+.svc.tall{grid-row:span 2;min-height:640px}
+.also{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:24px 0;border-top:1px solid var(--line)}
+.also p{margin:0;font-weight:600}
+
+/* service area */
+.area{background:var(--blue);color:#fff;padding:96px 0;position:relative;overflow:hidden}
+.area::before{content:"";position:absolute;right:-40px;top:0;bottom:0;width:42%;
+  background:repeating-linear-gradient(180deg,rgba(255,255,255,.14) 0 12px,transparent 12px 24px);
+  clip-path:polygon(30% 0,100% 0,100% 100%,0 100%)}
+.area .wrap{position:relative}
+.area h2{font-size:clamp(20px,2vw,26px);font-stretch:100%;font-weight:600;margin-bottom:24px;color:#E3E8FF}
+.area ul{list-style:none;margin:0;padding:0}
+.area li{font-size:clamp(44px,8vw,120px);font-weight:800;font-stretch:125%;line-height:.98;letter-spacing:-.03em}
+.area li:last-child{color:transparent;-webkit-text-stroke:2px #fff}
+
+/* quote */
+.quote{padding:120px 0}
+.quote .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.quote h2{font-size:clamp(36px,4.4vw,64px);font-weight:800;margin-bottom:20px}
+.quote p{color:var(--muted);margin:0 0 32px;max-width:28em}
+.channels{display:grid;gap:16px}
+.channel{display:flex;align-items:center;gap:20px;padding:26px 28px;border:2px solid var(--line);border-radius:6px;text-decoration:none;background:var(--surface);transition:border-color .2s}
+.channel:hover{border-color:var(--plum)}
+.channel .ic{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--blue-soft);color:var(--blue)}
+.channel .ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2}
+.channel small{display:block;color:var(--muted);font-size:14px}
+.channel strong{font-size:clamp(22px,2.4vw,30px);font-stretch:110%;letter-spacing:-.01em}
+
+/* footer */
+footer{background:var(--plum-deep);color:var(--on-dark);padding:80px 0 0;font-size:15px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;padding-bottom:56px}
+footer .logo-tile{display:inline-block;background:#fff;border-radius:6px;padding:12px;margin-bottom:18px}
+footer .logo-tile img{width:84px}
+footer h3{font-size:15px;font-stretch:100%;font-weight:700;margin-bottom:16px;color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer a{text-decoration:none;color:var(--on-dark-muted)}
+footer a:hover{color:#fff;text-decoration:underline}
+footer p{margin:0 0 10px;color:var(--on-dark-muted)}
+footer .bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--on-dark-muted);font-size:14px}
+footer .bottom a{color:#fff;font-weight:600}
+
+@media (max-width:980px){
+  nav.main{display:none}
+  header .btn{margin-left:auto}
+  .hero .wrap,.about .wrap,.office .wrap,.extra .head,.quote .wrap{grid-template-columns:1fr;gap:40px}
+  .hero{padding-top:48px}
+  .hero .ctas{margin-bottom:8px}
+  .tower{min-height:420px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc.tall{grid-row:auto;min-height:440px}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .wrap{width:calc(100% - 36px)}
+  .topbar .area-note{display:none}
+  .brand small{display:none}
+  .commit{grid-template-columns:1fr}
+  .about,.office,.extra,.quote{padding:80px 0}
+  footer .cols{grid-template-columns:1fr}
+  header .btn{padding:10px 16px;font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="area-note">Serving Edmonton, Nisku, Sherwood Park and Area</span>
+    <div class="contact">
+      <a href="mailto:info@2k2.ca?subject=Quote">info@2k2.ca</a>
+      <a href="tel:1-780-906-9643">780.906.9643</a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/2k2janitorial/?hl=en" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2.2c-2.7 0-3 0-4 .1-1 0-1.8.2-2.4.5a5 5 0 0 0-1.8 1.2A5 5 0 0 0 2.6 5.8c-.3.6-.4 1.4-.5 2.4-.1 1-.1 1.4-.1 4s0 3 .1 4c0 1 .2 1.8.5 2.4.3.7.6 1.2 1.2 1.8.6.6 1.1.9 1.8 1.2.6.3 1.4.4 2.4.5 1 .1 1.4.1 4 .1s3 0 4-.1c1 0 1.8-.2 2.4-.5a5 5 0 0 0 3-3c.3-.6.4-1.4.5-2.4.1-1 .1-1.4.1-4s0-3-.1-4c0-1-.2-1.8-.5-2.4a5 5 0 0 0-1.2-1.8 5 5 0 0 0-1.8-1.2c-.6-.3-1.4-.4-2.4-.5-1-.1-1.3-.1-4-.1zm0 1.8c2.6 0 2.9 0 3.9.1.9 0 1.5.2 1.8.3.5.2.8.4 1.1.7.3.3.6.7.7 1.1.1.3.3.9.3 1.8.1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c0 .9-.2 1.5-.3 1.8a3.2 3.2 0 0 1-1.8 1.8c-.3.1-.9.3-1.8.3-1 .1-1.3.1-3.9.1s-2.9 0-3.9-.1c-.9 0-1.5-.2-1.8-.3a3 3 0 0 1-1.1-.7 3 3 0 0 1-.7-1.1c-.1-.3-.3-.9-.3-1.8-.1-1-.1-1.3-.1-3.9s0-2.9.1-3.9c0-.9.2-1.5.3-1.8.2-.5.4-.8.7-1.1.3-.3.7-.6 1.1-.7.3-.1.9-.3 1.8-.3 1-.1 1.3-.1 3.9-.1z"/></svg></a>
+      <a href="https://www.facebook.com/2k2janitorial/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 8.5V6.8c0-.8.2-1.2 1.4-1.2H17V2.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v1.9H7.7v3.3h2.7V22H14V11.8h2.7l.4-3.3H14z"/></svg></a>
+      <a href="https://www.linkedin.com/company/2k2-janitorial/about/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V9.5z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="https://www.2k2.ca">
+      <img src="images/2k2-logo.png" alt="2K2 Janitorial Services logo" width="355" height="304">
+      <span>2K2 Janitorial Services<small>Commercial cleaning, Edmonton</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#office-cleaning">Office Cleaning</a>
+      <a href="#additional-services">Additional Services</a>
+      <a href="#service-area">Service Area</a>
+    </nav>
+    <a class="btn primary" href="https://www.2k2.ca/contact">Request Quote</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Edmonton &amp; Area Commercial Cleaning Services</h1>
+        <p class="lead">Top-quality janitorial services for businesses and commercial properties, personalised to your needs, with flexible hours and competitive rates.</p>
+        <div class="ctas">
+          <a class="btn primary" href="https://www.2k2.ca/contact">Request a quote today</a>
+          <a class="btn ghost" href="tel:1-780-906-9643">Call 780.906.9643</a>
+        </div>
+      </div>
+      <div class="tower" aria-hidden="false">
+        <div class="slot"><img src="images/hero-office-crew.jpg" alt="2K2 cleaning crew vacuuming and wiping down an office" onerror="this.remove()"></div>
+        <div class="base" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Our promise">
+    <div class="slot"><img src="images/window-glass-band.jpg" alt="" onerror="this.remove()"></div>
+    <div class="wrap">
+      <p>Our Business Keeps Your Business Clean</p>
+      <a class="btn ghost" href="mailto:info@2k2.ca?subject=Quote">Email info@2k2.ca</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>We promise and deliver satisfaction by personalising our service for you.</h2>
+      <div class="copy">
+        <p>At 2K2 Janitorial Services, we are dedicated to providing top-quality janitorial services to businesses and commercial properties. We make sure our customers receive the best service possible and that their properties are kept clean and well-maintained.</p>
+        <p>Our team is highly experienced and knowledgeable, with years of experience in the industry. We are committed to the highest quality of service, and we take the time to understand each customer’s unique needs.</p>
+        <ul class="commit">
+          <li>Highly experienced team</li>
+          <li>Service built around your needs</li>
+          <li>Flexible hours</li>
+          <li>Competitive rates</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="office" id="office-cleaning">
+    <div class="wrap">
+      <div class="slot"><img src="images/office-cleaning.jpg" alt="Janitor cleaning a modern office lunchroom" loading="lazy" onerror="this.remove()"></div>
+      <div>
+        <h2>Office Cleaning</h2>
+        <p>Workplace cleanliness is equally important for employee morale and projecting a good image to clients. Let us come in and clean your office for a fresh start the next day.</p>
+        <div class="directory">
+          <h3>This service includes</h3>
+          <ul>
+            <li>Washrooms<span>Included</span></li>
+            <li>Lunchrooms<span>Included</span></li>
+            <li>Conference rooms<span>Included</span></li>
+            <li>Reception areas<span>Included</span></li>
+            <li>Individual offices<span>Included</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra" id="additional-services">
+    <div class="wrap">
+      <div class="head">
+        <h2>Additional Cleaning Services</h2>
+        <div>
+          <p>We will put the finishing touches on your completed project.</p>
+          <p>In addition to your regular cleaning, we provide the following services to enhance your workspace.</p>
+        </div>
+      </div>
+      <div class="svc-grid">
+        <a class="svc tall" href="https://www.2k2.ca/contact">
+          <div class="slot"><img src="images/window-cleaning.jpg" alt="Window cleaner washing a commercial glass facade" loading="lazy" onerror="this.remove()"></div>
+          <div class="txt"><h3>Window Cleaning</h3><p>Exterior and interior window washing.</p></div>
+        </a>
+        <a class="svc" href="https://www.2k2.ca/contact">
+          <div class="slot"><img src="images/floor-refinishing.jpg" alt="Floor machine polishing a commercial floor" loading="lazy" onerror="this.remove()"></div>
+          <div class="txt"><h3>Floor Refinishing</h3><p>Floor refinishing, polishing, deep scrubbing and waxing.</p></div>
+        </a>
+        <a class="svc" href="https://www.2k2.ca/contact">
+          <div class="slot"><img src="images/carpet-cleaning.jpg" alt="Carpet extraction cleaning in an office" loading="lazy" onerror="this.remove()"></div>
+          <div class="txt"><h3>Carpet Cleaning</h3><p>Deep carpet cleaning for offices and commercial spaces.</p></div>
+        </a>
+      </div>
+      <div class="also">
+        <p>Wall washing is also available alongside your regular cleaning.</p>
+        <a class="btn primary" href="mailto:info@2k2.ca?subject=Request%20Quote">Request Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" id="service-area">
+    <div class="wrap">
+      <h2>Serving Edmonton, Nisku, Sherwood Park and Area</h2>
+      <ul>
+        <li>Edmonton</li>
+        <li>Nisku</li>
+        <li>Sherwood Park</li>
+        <li>&amp; Area</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="quote" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Request a quote today</h2>
+        <p>Tell us about your space and schedule. We’ll put together a cleaning plan that fits your business.</p>
+        <a class="btn primary" href="https://www.2k2.ca/contact">Request Quote</a>
+      </div>
+      <div class="channels">
+        <a class="channel" href="mailto:info@2k2.ca?subject=Quote">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small>Email</small><strong>info@2k2.ca</strong></span>
+        </a>
+        <a class="channel" href="tel:1-780-906-9643">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>
+          <span><small>Phone</small><strong>1-780-906-9643</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo-tile" href="https://www.2k2.ca"><img src="images/2k2-logo.png" alt="2K2 Janitorial Services"></a>
+        <p><strong style="color:#fff">2K2 Janitorial Services</strong></p>
+        <p>Our Business Keeps Your Business Clean</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#office-cleaning">Office Cleaning</a></li>
+          <li><a href="#additional-services">Floor Refinishing</a></li>
+          <li><a href="#additional-services">Carpet Cleaning</a></li>
+          <li><a href="#additional-services">Window Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:1-780-906-9643">780.906.9643</a></li>
+          <li><a href="mailto:info@2k2.ca">info@2k2.ca</a></li>
+          <li><a href="https://www.2k2.ca/contact">Request Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service area</h3>
+        <p>Edmonton, Nisku, Sherwood Park and Area</p>
+        <div class="social" style="margin-top:16px">
+          <a href="https://www.instagram.com/2k2janitorial/?hl=en" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/><path d="M7.5 2.2h9a5.3 5.3 0 0 1 5.3 5.3v9a5.3 5.3 0 0 1-5.3 5.3h-9a5.3 5.3 0 0 1-5.3-5.3v-9a5.3 5.3 0 0 1 5.3-5.3zm0 1.8A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9z"/></svg></a>
+          <a href="https://www.facebook.com/2k2janitorial/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 8.5V6.8c0-.8.2-1.2 1.4-1.2H17V2.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v1.9H7.7v3.3h2.7V22H14V11.8h2.7l.4-3.3H14z"/></svg></a>
+          <a href="https://www.linkedin.com/company/2k2-janitorial/about/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V9.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="yr">2026</span> 2K2 Janitorial Services. All rights reserved.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
