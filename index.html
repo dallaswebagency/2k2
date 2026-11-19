@@ -47,6 +47,10 @@ h1,h2,h3{font-stretch:112%;line-height:1.02;letter-spacing:-.02em;margin:0}
   repeating-linear-gradient(180deg,color-mix(in srgb,var(--plum) 18%,transparent) 0 14px,transparent 14px 28px),var(--blue-soft)}
 .slot img{width:100%;height:100%;object-fit:cover}
 .tower .slot img{object-position:35% center}
+.svc.tall .slot img{object-position:40% 30%}
+.office .slot img{object-position:60% center}
+.svc:nth-child(2) .slot img{object-position:55% 0%}
+.svc:nth-child(3) .slot img{object-position:55% 45%}
 
 /* top bar (reference structure) */
 .topbar{background:var(--plum-deep);color:var(--on-dark);font-size:14px}
@@ -140,13 +144,13 @@ header .btn{padding:11px 20px;font-size:15px}
 .extra .head p{margin:0 0 12px;color:var(--muted);max-width:32em}
 .extra .head p:first-child{color:var(--ink);font-weight:600;font-size:19px}
 .svc-grid{display:grid;grid-template-columns:1fr 1.35fr;grid-template-rows:auto auto;gap:24px}
-.svc{position:relative;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;border-radius:6px;overflow:hidden;min-height:300px;text-decoration:none}
+.svc{position:relative;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;border-radius:6px;overflow:hidden;min-height:340px;text-decoration:none}
 .svc .slot{position:absolute;inset:0}
 .svc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(30,8,20,.86))}
 .svc .txt{position:relative;z-index:1;padding:28px}
 .svc h3{font-size:clamp(24px,2.4vw,34px);font-weight:800;margin-bottom:8px}
 .svc p{margin:0;max-width:26em;color:#EDE6F0}
-.svc.tall{grid-row:span 2;min-height:640px}
+.svc.tall{grid-row:span 2;min-height:704px}
 .also{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:24px 0;border-top:1px solid var(--line)}
 .also p{margin:0;font-weight:600}
 
